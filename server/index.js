@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const authRoutes = require('./routes/auth');
 const dns = require('dns');
 dns.setServers(["8.8.8.8"])
 dotenv.config();
@@ -9,6 +10,10 @@ dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+
+//Routes
+app.use('/api/auth', authRoutes);
 
 
 // Connect to MongoDB
