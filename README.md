@@ -26,7 +26,6 @@
 - [Getting Started](#-getting-started)
 - [Environment Variables](#-environment-variables)
 - [API Endpoints](#-api-endpoints)
-- [Seed Data](#-seed-data)
 - [Screenshots](#-screenshots)
 - [License](#-license)
 
@@ -84,7 +83,7 @@ Admin ──► Confirm Booking ──► Update Seats ──► Send Confirmati
 
 > The full flowchart with all three flows (OTPFLOW, BOOKINGFLOW, ADMINFLOW) is shown below:
 
-<img src="flowchart.png" alt="Eventora System Flowchart — OTP Flow, Booking Flow, Admin Flow" width="100%" />
+<img src="Flowchart.png" alt="Eventora System Flowchart — OTP Flow, Booking Flow, Admin Flow" width="100%" />
 
 ---
 
@@ -266,7 +265,8 @@ DNS_SERVERS=8.8.4.4,8.8.8.8
 | PUT | `/:id` | Update event | Admin |
 | DELETE | `/:id` | Delete event | Admin |
 
-### Booking Routes — `/api/bookings`
+
+281### Booking Routes — `/api/bookings`
 | Method | Endpoint | Description | Access |
 |--------|----------|-------------|--------|
 | POST | `/` | Submit booking request | Private |
@@ -277,19 +277,6 @@ DNS_SERVERS=8.8.4.4,8.8.8.8
 
 ---
 
-## 🌱 Seed Data
-
-The `seed.js` file populates the database with:
-
-**10 Sample Users:**
-
-| Role | Email | Password |
-|------|-------|----------|
-| Admin | admin@eventora.com | password123 |
-| User | user@eventora.com | password123 |
-| User | alice@eventora.com | password123 |
-| User | bob@eventora.com | password123 |
-| ... | ... | password123 |
 
 **Sample Events** including:
 - Node.js Developer Retreat
